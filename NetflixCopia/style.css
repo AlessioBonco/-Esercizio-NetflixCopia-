@@ -1,0 +1,246 @@
+
+#bd {
+    background-color: rgb(33, 37, 41);
+
+}
+#nav {
+    position: relative;
+}
+#nav input{
+    border-radius: 20PX;
+    background-color: rgb(33, 37, 41);
+    border: 1px solid gray;
+text-align: end;
+width: 200px;
+}
+
+#lente {
+    position: absolute;
+    top: 50%;
+    left: 10px; 
+    transform: translateY(-50%);
+}
+#navbar {
+ padding: 0.4rem;
+
+}
+
+#navbar li {
+    font-size: 14px;
+}
+
+#logo img {
+    width: 90px;
+
+}
+
+#nav {
+    gap: 20px;
+   color: rgb(224, 202, 202);
+   align-items: center;
+}
+
+#nav img{
+    width: 30px;
+    height: 30px;
+}
+
+#nav2 {
+padding: 0.4rem;
+
+}
+
+#icone2 {
+    color: gray;
+
+}
+#icone2:hover {
+    cursor: pointer;
+    background-color:rgb(52, 42, 42);
+
+}
+#icone2 i {
+    border:  1px solid gray;
+    padding: 5px;
+    font-size: 10px;
+}
+
+#genere {
+    width: 80px;
+    background-color: black;
+    text-align: center;
+    border:  1px solid gray;
+    margin-left: 20px;
+}
+
+
+#genere a {
+font-size: 0.4cm;
+margin-left: 5px;
+}
+
+#tv {
+    font-size: 0.8cm;
+}
+
+main{
+    margin-left: 20px;
+}
+
+        .card-container {
+            display: flex;
+            gap: 0.2rem;
+            scroll-snap-type: x mandatory;
+            overflow-x: auto;
+            padding: 0.4rem; 
+         
+        }
+        
+        .card-container::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .film:hover{
+            cursor: pointer;
+        }
+        .film {
+            flex: 0 0 auto;
+            overflow: visible; 
+        }
+        
+        .film img {
+            transition: transform 0.3s ease;
+            width: 100%; /
+         
+        }
+        
+        .film img:hover {
+            transform: scale(1.1);
+            z-index: 1; 
+        }
+
+    #titolino {
+        color: white;
+        font-size: 0.5cm;
+        margin-left: 5px;
+    }
+
+    #cards {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+        margin-top: 100px;
+    }
+
+@media (max-width: 768px) {
+    .film {
+        flex: 0 0 auto;
+        overflow: visible; 
+        width: 40%;
+    }
+    #nav input{
+        border-radius: 20PX;
+        background-color: rgb(33, 37, 41);
+        border: 1px solid gray;
+    text-align: end;
+    width: 100px;
+    }
+}
+
+
+#icone3 {
+    display: flex;
+    color: gray;
+    gap: 15px;
+    font-size: 0.6cm;
+}
+#icone3 a {
+    text-decoration: none;
+    color: gray;
+}
+#icone3 a:hover {
+    color: rgb(87, 80, 80);
+}
+
+#fut-cont{
+margin: auto;
+width: 40%;
+margin-top: 70px;
+}
+#div-cont {
+    display: flex;
+    gap: 80px;
+}
+#div1{
+    color: gray;
+    display: flex;
+    flex-direction: column;
+
+    font-size: 0.3cm;
+    margin-top: 10px;
+}
+
+@media (max-width: 1498px) {
+ 
+    #fut-cont{
+       margin: auto;
+        width: 50%;
+        margin-top: 60px;
+        }
+ 
+}
+@media (max-width: 1098px) {
+ 
+    #fut-cont{
+       margin: auto;
+        width: 90%;
+        margin-top: 60px;
+        }
+        #div1{
+            color: gray;
+            display: flex;
+            flex-direction: column;
+            font-size: 0.1scm;
+            margin-top: 20px;
+        
+        }
+  
+}
+@media (max-width: 698px) {
+ 
+    #fut-cont{
+       margin: auto;
+        width: 95%;
+        margin-top: 60px;
+        }
+        #div1{
+            color: gray;
+            display: flex;
+            flex-direction: column;
+            font-size: 0.2cm;
+            margin-top: 20px;
+        
+        }
+        #div-cont {
+            display: flex;
+            gap: 20px;
+        }
+  
+}
+
+#code-btn a{
+    border: solid 1px gray;
+    padding: 5px;
+    text-decoration: none;
+    color: gray;
+}
+#code-btn  a:hover {
+    background-color: rgb(52, 42, 42);
+}
+
+
+
+#cards.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
